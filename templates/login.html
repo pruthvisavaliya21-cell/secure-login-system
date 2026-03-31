@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>🔐 Welcome Back</h2>
+
+  <form method="POST" action="/login">
+    
+    <div class="input-group">
+      <input type="email" name="email" placeholder="Enter Email" required>
+    </div>
+
+    <div class="input-group">
+      <input type="password" name="password" placeholder="Enter Password" required>
+    </div>
+
+    <p style="margin:10px 0;">🧠 CAPTCHA: {{a}} + {{b}}</p>
+
+    <div class="input-group">
+      <input type="number" name="captcha" placeholder="Answer" required>
+    </div>
+
+    <button>Login</button>
+  </form>
+
+  <a href="/register">Create Account →</a>
+</div>
+
+</body>
+</html>

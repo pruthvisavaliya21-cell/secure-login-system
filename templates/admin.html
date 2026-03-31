@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container dashboard">
+  <h2>👑 Admin Dashboard</h2>
+
+  <p>All Users:</p>
+
+  <div style="margin-top:15px;">
+    {% for u in users %}
+      <p>👤 {{u.username}} — {{u.role}}</p>
+    {% endfor %}
+  </div>
+
+  <br>
+
+  <button onclick="location.href='/logout'">Logout</button>
+</div>
+
+</body>
+</html>
